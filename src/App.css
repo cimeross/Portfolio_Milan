@@ -100,8 +100,8 @@ img {
 	transition: 0.5s;
 }
 
-.btm:hover::before,
-.btm:hover::after {
+.btn:hover::before,
+.btn:hover::after {
 	width: 100%;
 }
 
@@ -154,6 +154,7 @@ img {
 
 .underline {
 	position: absolute;
+	left: 0;
 	width: 100%;
 	height: 3px;
 	top: 35px;
@@ -165,6 +166,7 @@ img {
 .underline span {
 	top: 0;
 	left: 10px;
+	height: 100%;
 	width: 10px;
 	border-radius: 10px;
 	position: absolute;
