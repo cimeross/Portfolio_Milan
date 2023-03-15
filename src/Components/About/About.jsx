@@ -2,19 +2,16 @@ import React from "react";
 import "./about.scss";
 import { GrDocumentDownload } from "react-icons/gr";
 import img from "../../assets/milan_suvajac.png";
+import pdfFile from "../../assets/MilanSuvajac_cv.pdf";
 
 const About = () => {
-	const onButtonClick = () => {
-		fetch("MilanSuvajac_cv.pdf").then((response) => {
-			response.blob().then((blob) => {
-				const fileURL = window.URL.createObjectURL(blob);
-				let alink = document.createElement("a");
-				alink.href = fileURL;
-				alink.download = "MilanSuvajac_cv.pdf";
-				alink.click();
-			});
-		});
+	const handleDownload = () => {
+		const link = document.createElement("a");
+		link.href = pdfFile;
+		link.download = "MilanSuvajac_cv.pdf";
+		link.click();
 	};
+
 	return (
 		<section id="about" className="about section container">
 			<div className="sectionTitle">
@@ -40,7 +37,7 @@ const About = () => {
 						to be a part of a dynamic and innovative team.
 					</h4>
 					<div className="aboutBtn">
-						<a onClick={onButtonClick} href="" className="flex">
+						<a onClick={handleDownload} href="#" className="flex">
 							Download CV <GrDocumentDownload className="icon" />
 						</a>
 					</div>

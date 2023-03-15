@@ -1,8 +1,12 @@
 import React from "react";
-import "./Footer";
+import "./footer.scss";
 
 const Footer = () => {
-	return <section id="footer">Footer</section>;
+	return (
+		<section className="footer">
+			<span>Milan Suvajac - Frontend Developer | Portfolio Website</span>
+		</section>
+	);
 };
 
 export default Footer;

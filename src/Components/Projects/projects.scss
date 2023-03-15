@@ -1,0 +1,81 @@
+:root {
+	--primaryColor: #00eaff;
+	--primaryHover: hsl(185, 92%, 41%);
+	--secondaryColor: rgb(150, 162, 188);
+	--paragraphColor: rgb(127, 127, 175);
+	--BgColor: #031a30;
+	--formColor: rgb(2, 15, 29);
+	--projectCardColor: #072340;
+	--textColor: #dae4fb;
+	--headerHeight: 3rem;
+}
+
+.projects {
+	.projectContainer {
+		margin-top: 1rem;
+		justify-content: space-between;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 1rem;
+
+		.singleProject {
+			display: grid;
+			gap: 0.5rem;
+			padding: 1.5rem 1rem;
+			border-radius: 10px;
+			height: 100%;
+			background: var(--projectCardColor);
+
+			.externalLinks {
+				width: 100%;
+				justify-content: space-between;
+
+				.netlifyIcon,
+				.githubIcon {
+					a {
+						color: var(--primaryColor);
+						&:hover {
+							color: var(--primaryHover);
+						}
+					}
+				}
+			}
+
+			&:hover {
+				transform: translateY(-7px);
+				border-bottom: 2px solid var(--primaryColor);
+			}
+
+			.imgDiv {
+				height: 150px;
+				width: auto;
+				border-radius: 5px;
+				overflow: hidden;
+				cursor: pointer;
+				img {
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+					border-radius: 5px;
+				}
+			}
+			.projectTitle {
+				display: flex;
+				font-weight: 600;
+				color: var(--textColor);
+			}
+			.desc {
+				font-weight: 600;
+				color: var(--secondaryColor);
+			}
+
+			.technologies {
+				gap: 0.5rem;
+				justify-content: flex-end;
+				small {
+					color: var(--secondaryColor);
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
