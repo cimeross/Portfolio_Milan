@@ -8,20 +8,29 @@ import "./home.scss";
 const Home = () => {
 	return (
 		<section id="home" className="home section">
-			{/* <div className="leftIcons">
-				<div className="socials grid">
-					<a href="" target="_blank">
+			<div className="leftIcons">
+				<div className="socials grid ">
+					<a href="https://github.com/cimeross" target="_blank">
 						<AiFillGithub className="icon" />
+					</a>
+					<a href="https://app.netlify.com/teams/cimeross" target="_blank">
 						<SiNetlify className="icon" />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/milan-suvajac-ms"
+						target="_blank"
+					>
 						<AiOutlineLinkedin className="icon" />
 					</a>
 				</div>
-			</div> */}
+				<div className="line"></div>
+			</div>
 			<div className="container homeContainer">
 				<span className="introText">Hi my name is,</span>
 				<h1 className="title">Milan Suvajac</h1>
 				<span className="subTitle">
-					A passionate and enthusiastic junior frontend developer.
+					A passionate and enthusiastic junior{" "}
+					<span className="frontendDeveloper">frontend developer</span>.
 				</span>
 				<p className="homeParagraph">
 					I develop scalable web based applications and software.
@@ -40,7 +49,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			{/* <div className="rightEmail">
+			<div className="rightEmail">
 				<div>
 					<div className="emailAddress">
 						<a href="https://mailto:milansuvajac021@gmail.com" target="_blank">
@@ -49,7 +58,7 @@ const Home = () => {
 					</div>
 					<div className="line"></div>
 				</div>
-			</div> */}
+			</div>
 		</section>
 	);
 };

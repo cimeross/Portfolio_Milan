@@ -14,6 +14,8 @@
 	.skillsContainer {
 		.groupTitle {
 			color: var(--textColor);
+			margin-left: 10px;
+
 			.subtitle {
 				display: block;
 				padding: 0.3rem 0 1rem;
@@ -86,6 +88,42 @@
 					text-align: center;
 					font-weight: 600;
 					color: var(--secondaryColor);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.skills {
+		.skillsContainer {
+			.skillGroup {
+				.generalSkills {
+					grid-template-columns: repeat(6, 1fr);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 769px) {
+	skills {
+		.skillsContainer {
+			.skillGroup {
+				.generalSkills {
+					grid-template-columns: repeat(3, 1fr);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	skills {
+		.skillsContainer {
+			.skillGroup {
+				.generalSkills {
+					grid-template-columns: repeat(6, 1fr);
 				}
 			}
 		}
