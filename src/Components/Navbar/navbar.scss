@@ -25,9 +25,23 @@
 		color: var(--textColor);
 		font-weight: 600;
 		cursor: pointer;
+		img {
+			width: 3rem;
+			height: auto;
+		}
 	}
 
 	@media screen and (max-width: 768px) {
+		.logoDiv {
+			.logo {
+				a {
+					img {
+						width: 1.7rem;
+						height: auto;
+					}
+				}
+			}
+		}
 		.navBar {
 			background: var(--projectCardColor);
 			position: absolute;
@@ -91,4 +105,61 @@
 .activeHeader {
 	background-color: var(--projectCardColor);
 	box-shadow: 0 2px 4px rgba(1, 15, 29, 0.904);
+}
+
+@media screen and (min-width: 769px) {
+	.toggleNavBar,
+	.closeNavBar {
+		display: none;
+	}
+
+	.header {
+		padding: 2.5rem 2rem;
+		.navLists {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
+			padding: 0 1rem;
+
+			.navItem {
+				padding: 0 1rem;
+
+				.navLink {
+					color: var(--textColor);
+					font-size: 1.2rem;
+					font-weight: 600;
+					&:hover {
+						color: var(--primaryColor);
+					}
+
+					.headerNumber {
+						color: var(--primaryHover);
+					}
+				}
+			}
+
+			.btn {
+				margin-left: 1rem;
+				a {
+					color: var(--primaryColor);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.header {
+		padding: 2.5rem 5rem;
+
+		.navBar {
+			.navLists {
+				padding: 0 2rem;
+				.navItem {
+					padding: 0 2rem;
+				}
+			}
+		}
+	}
 }

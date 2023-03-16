@@ -118,3 +118,24 @@
 		}
 	}
 }
+
+@media screen and (min-width: 640px) {
+	.socialContacts {
+		.card {
+			row-gap: 14px;
+			padding: 2.5rem;
+			.icon {
+				font-size: 45px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.contact {
+		.contactContainer {
+			grid-template-columns: 2 1fr;
+			align-items: flex-start !important;
+		}
+	}
+}

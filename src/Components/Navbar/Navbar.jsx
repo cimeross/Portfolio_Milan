@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./navbar.scss";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
+import img from "../../assets/logo.png";
 
 const Navbar = () => {
 	const [active, setActive] = useState("navBar");
@@ -33,7 +34,9 @@ const Navbar = () => {
 		<header className={activeHeader}>
 			<div className="logoDiv">
 				<h1 className="logo">
-					<a href="#home">MS</a>
+					<a href="#home">
+						<img src={img} alt="logo" />
+					</a>
 				</h1>
 			</div>
 			<div className={active}>
@@ -66,7 +69,7 @@ const Navbar = () => {
 					<AiFillCloseCircle className="icon" />
 				</div>
 			</div>
-			<div onClick={showNavBar} className="closeNavbar">
+			<div onClick={showNavBar} className="toggleNavBar">
 				<TbGridDots className="icon" />
 			</div>
 		</header>
