@@ -3,6 +3,7 @@ import "./navbar.scss";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
 import img from "../../assets/logo.png";
+import pdfFile from "../../assets/Milan Suvajac-CV.pdf";
 
 const Navbar = () => {
 	const [active, setActive] = useState("navBar");
@@ -29,6 +30,13 @@ const Navbar = () => {
 			window.removeEventListener("scroll", addBg);
 		};
 	}, []);
+
+	const handleDownload = () => {
+		const link = document.createElement("a");
+		link.href = pdfFile;
+		link.download = "MilanSuvajac_cv.pdf";
+		link.click();
+	};
 
 	return (
 		<header className={activeHeader}>
@@ -62,7 +70,9 @@ const Navbar = () => {
 						</a>
 					</li>
 					<button className="btn">
-						<a href="">Resume</a>
+						<a onClick={handleDownload} href="#">
+							Resume
+						</a>
 					</button>
 				</ul>
 				<div onClick={removeNavBar} className="closeNavBar">
