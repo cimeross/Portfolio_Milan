@@ -18,7 +18,7 @@ const data = [
 		title: "Movie Search App",
 		desc: "The Movie Search App is a responsive web application developed using React, Redux, Axios for API calls, React Router DOM, and SCSS. The primary objective of this application is to enable users to search for movies and view the details of a selected movie.",
 		tech1: "HTML5",
-		tech2: "CSS3",
+		tech2: "SCSS",
 		tech3: "React.js",
 	},
 	{
