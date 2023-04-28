@@ -2,13 +2,13 @@ import React from "react";
 import "./about.scss";
 import { GrDocumentDownload } from "react-icons/gr";
 import img from "../../assets/milan_suvajac.png";
-import pdfFile from "../../assets/MilanSuvajac_cv.pdf";
+import pdfFile from "../../assets/Milan Suvajac-CV.pdf";
 
 const About = () => {
 	const handleDownload = () => {
 		const link = document.createElement("a");
 		link.href = pdfFile;
-		link.download = "MilanSuvajac_cv.pdf";
+		link.download = "Milan Suvajac-CV.pdf";
 		link.click();
 	};
 
