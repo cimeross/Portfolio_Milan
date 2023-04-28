@@ -29,7 +29,7 @@ const Home = () => {
 				<span className="introText">Hi my name is,</span>
 				<h1 className="title">Milan Suvajac</h1>
 				<span className="subTitle">
-					A passionate and enthusiastic junior{" "}
+					A passionate and enthusiastic{" "}
 					<span className="frontendDeveloper">frontend developer</span>.
 				</span>
 				<p className="homeParagraph">

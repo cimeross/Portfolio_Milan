@@ -26,15 +26,19 @@ const About = () => {
 			<div className="sectionContent grid">
 				<div className="textSection">
 					<h4>
-						I have a strong foundation in HTML, CSS, and JavaScript and am
-						excited to apply my skills and knowledge to real-world projects.
-						Although I have not yet had the opportunity to gain professional
-						experience, I am eager to work in a team and learn from experienced
-						professionals. I am a quick learner, dedicated team player, and love
-						to solve problems. I believe my positive attitude and willingness to
-						learn will make me a valuable addition to any organization. I am
-						excited to begin my career in the tech industry and would be honored
-						to be a part of a dynamic and innovative team.
+						As a frontend developer, my passion for programming began a few
+						years ago. Prior to that, I worked as a self-taught freelance
+						graphic designer, always striving for perfection and enjoying the
+						process of creating something by myself. I wanted to expand my
+						skills in web design, which led me to discover programming. I
+						started learning on my own, and for the past few years, I have found
+						myself in the coding world. I am thrilled that I found my true life
+						path and never stopped learning and developing my skills, always
+						eager to adopt new technologies. With every project, I strive to
+						create something that I love and that brings joy to others. <br />{" "}
+						<span className="quote">"Live what you love"</span> is a quote that
+						resonates with me deeply, and I try to apply it to all aspects of my
+						life.
 					</h4>
 					<div className="aboutBtn">
 						<a onClick={handleDownload} href="#" className="flex">

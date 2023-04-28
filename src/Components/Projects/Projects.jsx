@@ -6,6 +6,8 @@ import img from "../../assets/movie_app.png";
 import img1 from "../../assets/gpt3.png";
 import img2 from "../../assets/beast-gym.png";
 import img3 from "../../assets/space-tourism.png";
+import img4 from "../../assets/bear-beer.png";
+import img5 from "../../assets/designer_portfolio.png";
 
 const data = [
 	{
@@ -48,6 +50,29 @@ const data = [
 		github: "https://github.com/cimeross/Space-Tourism",
 		title: "Space Tourism",
 		desc: "Space Tourism is a multipage website built using React.js and SCSS, which provides an immersive experience of space exploration. The website has been designed to cater to space enthusiasts, featuring engaging content such as space facts, images, and news. The website also utilizes React Router, which allows for seamless navigation across the various pages. ",
+		tech1: "HTML5",
+		tech2: "SCSS",
+		tech3: "React.js",
+	},
+
+	{
+		id: 5,
+		image: img4,
+		liveLink: "https://bear-beer.netlify.app/",
+		github: "https://github.com/cimeross/Bear-Beer-App",
+		title: "Bear Beer",
+		desc: "Bear Beer is an online beer delivery application created using React.js and Tailwind. The app features a variety of beers, which are stored on Firebase servers. Users can add selected beers to their cart but must log in to place an order, which is facilitated by Google Auth and Firebase. App also includes an admin feature. When logged in as an admin, the user can upload or delete beer items from the app. This provides a convenient way for the admin to manage the beer inventory and ensure that only the desired selection of beers is available to users. ",
+		tech1: "React.js",
+		tech2: "Tailwind",
+		tech3: "Firebase",
+	},
+	{
+		id: 6,
+		image: img5,
+		liveLink: "https://jelena-suvajac.netlify.app/",
+		github: "https://github.com/cimeross/designer-portfolio",
+		title: "Graphic & UX/UI Designer - Portfolio",
+		desc: "The Graphic & UX/UI Designer Portfolio project is a website created using React.js and SCSS, with email.js service integration. I used my own portfolio website as an example and guidance for it. It's fully responsive, ensuring it can be accessed on any device. The website's design is sleek and modern, with a user-friendly interface that allows for easy navigation through the various projects displayed. The portfolio also includes a contact page, allowing visitors to reach out for potential collaborations.",
 		tech1: "HTML5",
 		tech2: "SCSS",
 		tech3: "React.js",
