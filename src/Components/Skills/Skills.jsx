@@ -1,7 +1,7 @@
 import React from "react";
 import "./skils.scss";
 import { DiReact } from "react-icons/di";
-import { SiJavascript } from "react-icons/si";
+import { SiFirebase, SiJavascript, SiTailwindcss } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { BsGit } from "react-icons/bs";
@@ -21,10 +21,6 @@ const Skills = () => {
 			</div>
 			<div className="skillsContainer grid">
 				<div className="skillGroup">
-					<div className="groupTitle">
-						<h2 className="title">Web Development</h2>
-						<span className="subtitle">2 Years of Experience</span>
-					</div>
 					<div className="generalSkills">
 						<div className="singleSkill">
 							<div className="iconBox flex">
@@ -52,6 +48,12 @@ const Skills = () => {
 						</div>
 						<div className="singleSkill">
 							<div className="iconBox flex">
+								<SiTailwindcss className="icon" />
+							</div>
+							<span className="skillName">Tailwind</span>
+						</div>
+						<div className="singleSkill">
+							<div className="iconBox flex">
 								<DiCss3 className="icon" />
 							</div>
 							<span className="skillName">CSS</span>
@@ -61,6 +63,12 @@ const Skills = () => {
 								<BsGit className="icon" />
 							</div>
 							<span className="skillName">GIT</span>
+						</div>
+						<div className="singleSkill">
+							<div className="iconBox flex">
+								<SiFirebase className="icon" />
+							</div>
+							<span className="skillName">Firebase</span>
 						</div>
 					</div>
 				</div>

@@ -1,37 +1,16 @@
-:root {
-	--primaryColor: #00eaff;
-	--primaryHover: hsl(185, 92%, 41%);
-	--secondaryColor: rgb(150, 162, 188);
-	--paragraphColor: rgb(127, 127, 175);
-	--BgColor: #031a30;
-	--formColor: rgb(2, 15, 29);
-	--projectCardColor: #072340;
-	--textColor: #dae4fb;
-	--headerHeight: 3rem;
-}
-
 .skills {
 	.skillsContainer {
-		.groupTitle {
-			color: var(--textColor);
-			margin-left: 10px;
-
-			.subtitle {
-				display: block;
-				padding: 0.3rem 0 1rem;
-				color: var(--secondaryColor);
-				font-weight: 600;
-			}
-		}
+		padding-top: 3rem;
 
 		.generalSkills {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			justify-content: center;
 			align-items: center;
-			gap: 1rem;
+			gap: 1.5rem;
 
 			.singleSkill {
+				padding: 1rem;
 				display: grid;
 				align-items: center;
 				justify-content: center;
@@ -99,7 +78,7 @@
 		.skillsContainer {
 			.skillGroup {
 				.generalSkills {
-					grid-template-columns: repeat(6, 1fr);
+					grid-template-columns: repeat(4, 1fr);
 				}
 			}
 		}
@@ -111,7 +90,7 @@
 		.skillsContainer {
 			.skillGroup {
 				.generalSkills {
-					grid-template-columns: repeat(3, 1fr);
+					grid-template-columns: repeat(6, 1fr);
 				}
 			}
 		}
