@@ -3,7 +3,7 @@ import "./navbar.scss";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
 import img from "../../assets/logo.png";
-import pdfFile from "../../assets/Milan Suvajac-CV.pdf";
+import pdfFile from "../../assets/Milan Suvajac.pdf";
 
 const Navbar = () => {
 	const [active, setActive] = useState("navBar");
