@@ -2,7 +2,7 @@ import React from "react";
 import "./about.scss";
 import { GrDocumentDownload } from "react-icons/gr";
 import img from "../../assets/milan_suvajac.png";
-import pdfFile from "../../assets/Milan Suvajac-CV.pdf";
+import pdfFile from "../../assets/Milan Suvajac.pdf";
 
 const About = () => {
 	const handleDownload = () => {

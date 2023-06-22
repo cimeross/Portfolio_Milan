@@ -9,6 +9,7 @@ import img3 from "../../assets/space-tourism.png";
 import img4 from "../../assets/bear-beer.png";
 import img5 from "../../assets/designer_portfolio.png";
 import img6 from "../../assets/horizon.png";
+import img7 from "../../assets/music-quiz.png";
 
 const data = [
 	{
@@ -84,6 +85,16 @@ const data = [
 		desc: "The Graphic & UX/UI Designer Portfolio project is a website created using React.js and SCSS, with email.js service integration. I used my own portfolio website as an example and guidance for it. It's fully responsive, ensuring it can be accessed on any device. The website's design is sleek and modern, with a user-friendly interface that allows for easy navigation through the various projects displayed. The portfolio also includes a contact page, allowing visitors to reach out for potential collaborations.",
 		tech1: "React.js",
 		tech2: "SCSS",
+	},
+	{
+		id: 8,
+		image: img7,
+		liveLink: "https://musicquiz-ms.netlify.app/",
+		github: "https://github.com/cimeross/Music-Quiz-App",
+		title: "Music Quiz",
+		desc: "Music Quiz is an interactive web application designed to test your knowledge and passion for music. Created using React.ts, styled components, CSS, and API calls, this project offers users an exciting opportunity to challenge themselves and explore various music genres.",
+		tech1: "React.ts",
+		tech2: "CSS",
 	},
 ];
 
